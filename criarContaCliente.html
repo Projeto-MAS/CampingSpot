@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Camping Spot | Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" />
+    <link href="CSSGERAL.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style>
+
+        input#email {
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        input#password {
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        input#numeroTelemovel {
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        input#lastName {
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        input#firstName {
+            border: 1px solid #ccc;
+            border-radius: 0px;
+        }
+
+        input#submitButton {
+            letter-spacing: 0.02cm;
+            background: darkblue;
+            color: #fff;
+            font-weight: bold;
+            font-family: Montserrat;
+            font-size: 12px;
+            text-shadow: 2px 2px 1px #3c0750;
+            padding: 14px;
+            text-transform: uppercase;
+            border: 1px solid #3c0750;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container" style="display:flex; align-items: center;">
+            <a class="navbar-brand" href="htmlpage.html">
+                <img src="../imgs/trabalho_final_3.png" style="height:50px;" class="m-0 p-0" title="logo"> Camping Spot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="htmlpage1.html"> <i class="fa fa-book"></i>Book here</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="merch.html"> <i class="fa fa-shopping-cart"></i>Merch</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="login.html"> Login</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="criarContaCliente.html"> Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    
+    <div style="margin-top: 60px;">
+        <div style="line-height: 25px; padding-bottom: 10px;   position: relative; top: -2px; padding-top: 20px; color: darkblue; text-align: center; font-family: amaranth; font-size: 38px;">
+            <br /><span>Register</span><br /><br />
+        </div>
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 4%;">
+                <div class="col-lg-3 col-md-12">
+                </div>
+                <div class="col-lg-6 col-md-12"
+                     style="background-color:lightgrey;">
+                    <i class="fa fa-user fa-3x"
+                       style="margin-top: 3%; position: relative; text-align: center; color: darkblue; display: inline-block; width: 100%;"></i>
+                    <div style="font-size:18px; margin-left:50px;">
+                        <input type="radio" checked="checked" name="Free Account" value="Free Account" /> Free Account
+                        <br />
+                        <input type="radio" name="Free Account" value="Premium Account" /> Premium Account
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="hide col-md-10 text-danger col-form-label" id="general_Error" style="display: none;">
+                            <i class="fa fa-exclamation-triangle"></i> please fill in all fields!
+                        </div>
+                        <form id="formCriarConta" action="#" method="post">
+                            <div class="form-group" style="float: left;">
+                                <div class="container">
+                                    <label for="firstName" style="font-family: montserrat; font-size: 15px" class="col-md-2 col-form-label"><b>Name</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" name="firstName" id="firstName"
+                                               class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="hide col-md-10 text-danger col-form-label" id="firstName_Error"
+                                         style="display: none;">
+                                        <i class="fa fa-exclamation-triangle"></i> Invalid First Name!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="float: left;">
+                                <div class="container">
+                                    <label for="lastName" style="font-family: montserrat; font-size: 15px" class="col-md-2 col-form-label"><b>Surname</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" name="lastName" id="lastName"
+                                               class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="hide col-md-10 text-danger col-form-label" id="lastName_Error"
+                                         style="display: none;">
+                                        <i class="fa fa-exclamation-triangle"></i> Invalid Surname!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="container">
+                                    <label for="email" style="font-family: montserrat; font-size: 15px" class="col-md-10 col-form-label"><b>Email</b></label>
+                                    <div class="col-md-11">
+                                        <input type="text" name="email" id="email"
+                                               class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="hide col-md-10 text-danger col-form-label" id="email_Error"
+                                         style="display: none;">
+                                        <i class="fa fa-exclamation-triangle"></i> Invalid Email!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="container">
+                                    <label for="numeroTelemovel" style="font-family: montserrat; font-size: 15px" class="col-md-10 col-form-label">
+                                        <b>
+                                            Phone number
+                                        </b>
+                                    </label>
+                                    <div class="col-md-11">
+                                        <input type="text" name="numeroTelemovel" id="numeroTelemovel"
+                                               class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="hide col-md-10 text-danger col-form-label" id="numeroTelemovel_Error"
+                                         style="display: none;">
+                                        <i class="fa fa-exclamation-triangle"></i> Invalid Phone Number!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="container">
+                                    <label for="password" style="font-family: montserrat; font-size: 15px" class="col-md-10 col-form-label"><b>Password</b></label>
+                                    <div class="col-md-11">
+                                        <input type="password" name="password" id="password"
+                                               class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <div class="col-md-10 hide text-danger col-form-label" id="password_Error"
+                                         style="display: none;">
+                                        <i class="fa fa-exclamation-triangle"></i> Invalid Password 
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="text-center" style="padding-bottom: 3%;">
+                                <input id="submitButton" type="button" value="Register" class="btn btn-light"
+                                       onclick="validaFormulario()" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="criarContaCliente.js"></script>
+</body>
+
+</html>
